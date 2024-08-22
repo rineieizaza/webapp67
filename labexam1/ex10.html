@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Service Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .modal {
+            background-color: white;
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal h4 {
+            margin: 0 0 20px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="date"],
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-actions button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .form-actions button.cancel {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .form-actions button.submit {
+            background-color: #4caf50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <h4>ทำความสะอาดทั่วไป</h4>
+        <div class="form-group">
+            <label for="fullname">ชื่อ-นามสกุล</label>
+            <input type="text" id="fullname" name="fullname" value="Username">
+        </div>
+        <div class="form-group">
+            <label for="date">วัน</label>
+            <input type="text" id="date" name="date" value="วว/บบ/ปปปป">
+        </div>
+        <div class="form-group">
+            <label for="time">เวลา</label>
+            <input type="text" id="time" name="time" value="ระบุช่วงเวลา">
+        </div>
+        <div class="form-group">
+            <label for="location">สถานที่ใช้บริการทำความสะอาด</label>
+            <select id="location" name="location">
+                <option value="home">บ้าน</option>
+                <option value="office">สำนักงาน</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="house">บ้านเลขที่</label>
+            <input type="text" id="house" name="house" value="บ้านเลขที่">
+        </div>
+        <div class="form-group">
+            <label for="province">จังหวัด</label>
+            <select id="province" name="province">
+                <option value="เลือกจังหวัด">เลือกจังหวัด</option>
+                <!-- Add more options as necessary -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="district">อำเภอ</label>
+            <select id="district" name="district">
+                <option value="เลือกอำเภอ">เลือกอำเภอ</option>
+                <!-- Add more options as necessary -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="subdistrict">ตำบล</label>
+            <select id="subdistrict" name="subdistrict">
+                <option value="เลือกตำบล">เลือกตำบล</option>
+                <!-- Add more options as necessary -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="postalcode">รหัสไปรษณีย์</label>
+            <input type="text" id="postalcode" name="postalcode" value="รหัสไปรษณีย์">
+        </div>
+        <div class="form-group">
+            <label for="details">รายละเอียดที่อยู่</label>
+            <input type="text" id="details" name="details" value="หมู่,ซอย,ถนน">
+        </div>
+        <div class="form-group">
+            <label>ชำระเงินเมื่อ:</label>
+            <div>
+                <input type="radio" id="before" name="payment" value="before">
+                <label for="before">ปฏิบัติงาน</label>
+                <input type="radio" id="after" name="payment" value="after">
+                <label for="after">ปฏิบัติงานเสร็จ</label>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button class="cancel">ยกเลิก</button>
+            <button class="submit">ตกลง</button>
+        </div>
+    </div>
+</body>
+</html>

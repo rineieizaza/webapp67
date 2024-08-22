@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อความจาก localhost</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .alert-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .alert-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .alert-message {
+            margin-bottom: 20px;
+        }
+        .alert-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .alert-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-box">
+        <div class="alert-title">ข้อความจาก localhost</div>
+        <div class="alert-message">เข้าสู่ระบบไม่สำเร็จ!</div>
+        <button class="alert-button" onclick="alert('OK Button Clicked!')">ตกลง</button>
+    </div>
+</body>
+</html>

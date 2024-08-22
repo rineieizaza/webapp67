@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>แบบฟอร์มสมัครสมาชิก</title>
+    <style>
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>แบบฟอร์มสมัครสมาชิก</h1>
+    <form>
+        <h2>1. ข้อมูลส่วนตัว</h2>
+        <div class="form-group">
+            <label for="firstname">ชื่อ:</label>
+            <input type="text" id="firstname" name="firstname">
+        </div>
+        <div class="form-group">
+            <label for="lastname">นามสกุล:</label>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+        <h2>2. ที่อยู่ปัจจุบัน</h2>
+        <div class="form-group">
+            <label for="address">บ้านเลขที่:</label>
+            <input type="text" id="address" name="address">
+        </div>
+        <div class="form-group">
+            <label for="profile_picture">อัปโหลดรูปโปรไฟล์:</label>
+            <input type="file" id="profile_picture" name="profile_picture">
+        </div>
+
+        <button type="submit" class="btn">สมัครสมาชิก</button>
+        <button type="reset" class="btn">ยกเลิก</button>
+    </form>
+</body>
+</html>
